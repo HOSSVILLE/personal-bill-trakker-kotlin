@@ -1,0 +1,21 @@
+micronaut:
+  application:
+  name: billtrakker
+  server:
+    cors:
+      enabled: true
+      configurations:
+        web:
+          allowedOrigins:
+            - http://localhost:3000
+          allowedMethods:
+            - GET
+datasources:
+  default:
+    url: jdbc:postgresql://ec2-54-146-142-58.compute-1.amazonaws.com:5432/d1pupjmagsjrd
+    database: d1pupjmagsjrd
+    driverClassName: org.postgresql.Driver
+    username: qmfycfgrlewbzo
+    password: 8ad46b07ed739c783c7d53c2480ec4042109c49df04d265f5625017e329313c3
+    dialect: postgres
+
